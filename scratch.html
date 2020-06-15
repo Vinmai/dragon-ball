@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scratch2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="t1">Using Canvas</h1>
+    <canvas id="div1" class="blueback"></canvas>
+    <canvas id="div2" class="orangeback"></canvas>
+    <input type="button" value="Change colour" onclick="changecolour()" />
+    <input type="button" value="Undo colour" onclick="colourud()" />
+    <input type="button" value="Add text" onclick="textadd()" />
+    <input type="button" value="Undo text" onclick="textud()" />
+    <script>
+      function changecolour() {
+        var divele1 = document.getElementById("div1");
+        var divele2 = document.getElementById("div2");
+        divele1.style.backgroundColor = "burlywood";
+        divele2.style.backgroundColor = "lightgreen";
+      }
+      function textadd() {
+        var divele1 = document.getElementById("div1");
+        var divele2 = document.getElementById("div2");
+        var ctx = divele1.getContext("2d");
+        var con = divele2.getContext("2d");
+        ctx.fillStyle = "black";
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello!!", 10, 30);
+        con.fillStyle = "black";
+        con.font = "40px Times";
+        con.fillText("Namaste!!", 10, 30);
+      }
+      function colourud() {
+        var divele1 = document.getElementById("div1");
+        var divele2 = document.getElementById("div2");
+        divele1.style.backgroundColor = "lightblue";
+        divele2.style.backgroundColor = "orange";
+      }
+      function textud() {
+        var divele1 = document.getElementById("div1");
+        var divele2 = document.getElementById("div2");
+        var ctx = divele1.getContext("2d");
+        var con = divele2.getContext("2d");
+        ctx.clearText(0, 0, divele1.width, divele1.height);
+        con.clearText(0, 0, divele2.width, divele2.height);
+      }
+    </script>
+  </body>
+</html>

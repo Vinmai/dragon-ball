@@ -1,0 +1,14 @@
+canvas {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+input {
+  font-size: 30px;
+}
+.blueback {
+  background-color: lightblue;
+}
+.orangeback {
+  background-color: orange;
+}

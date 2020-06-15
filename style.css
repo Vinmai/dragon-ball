@@ -1,0 +1,39 @@
+.bak {
+  background: url("./bak2.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+}
+.bl {
+  /*background: #ff8800;*/
+  margin-left: 7em;
+  margin-right: 7em;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cl {
+  margin-left: 7em;
+  margin-right: 7em;
+  color: black;
+}
+.clm {
+  display: inline;
+  list-style-type: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: n;
+}
+.ig {
+  text-align: center;
+}
+#im {
+  width: 72vw;
+}
+.cll {
+  margin-left: 7em;
+  margin-right: 7em;
+  color: black;
+}
+ul li {
+  display: flex;
+}
